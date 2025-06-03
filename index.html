@@ -28,30 +28,34 @@
 </head>
 <body>
     <header>
-      <img src="assets/sumdulogo.png" alt="Логотип СумДУ" width="100" />
+      <img src="assets/sumdulogo.png" alt="Логотип СумДУ" width="100" loading="lazy">
       <h1>Кваліфікаційна робота бакалавра</h1>
     </header>
     <main>
         <section>
             <h2>Тема роботи</h2>
             <p>Інформаційна система автоматизованого керування проксі-серверами для комерційного використання</p>
-            <p>Information System for Automated Management of Proxy Servers for Commercial Use</p>
+            <p class="english-title">Information System for Automated Management of Proxy Servers for Commercial Use</p>
         </section>
         <section>
             <h2>Короткий опис</h2>
             <p>Telegram-бот-магазин для оренди проксі. Система автоматично розгортає проксі на відповідному сервері, при оренді та відразу видає клієнту дані для доступу.</p>
           </section>
         <section>
-          <h2">Мета роботи</h2>
+          <h2>Мета роботи</h2>
           <p>Створити Telegram-бот-магазин для оренди проксі, з автоматичним розгортанням проксі на сервері.</p>
         </section>
         <section>
             <h2>Ключові слова</h2>
-            <p>проксі, телеграм бот, веб-магазин</p>
+            <div class="keywords">
+                <span class="keyword">проксі</span>
+                <span class="keyword">телеграм бот</span>
+                <span class="keyword">веб-магазин</span>
+            </div>
         </section>
         <section>
             <h2>Завдання</h2>
-            <ul>
+            <ul class="tasks">
               <li>Розробити Telegram-бота</li>
               <li>Розробити модуль керування проксі</li>
               <li>Розробити адмін-панель в Telegram-боті</li>
@@ -59,12 +63,17 @@
         </section>
         <section>
             <h2>Контакти</h2>
-            <p>Email: dmytro.basanets@student.sumdu.edu.ua</p>
+            <p><a href="mailto:dmytro.basanets@student.sumdu.edu.ua" class="contact-link">dmytro.basanets@student.sumdu.edu.ua</a></p>
         </section>
         <section aria-labelledby="visual-materials-heading">
             <h2>Візуальні матеріали</h2>
-            <figure>
-                <img src="assets/bot_interface.PNG" alt="Інтерфейс клієнтського меню Telegram-бота для керування проксі-серверами">
+            <figure class="image-container">
+                <picture>
+                  <img src="assets/bot_interface.png" 
+                       alt="Інтерфейс клієнтського меню Telegram-бота для керування проксі-серверами" 
+                       loading="lazy"
+                       class="responsive-image">
+                </picture>
                 <figcaption>Інтерфейс клієнтського меню бота</figcaption>
             </figure>
         </section>
@@ -72,5 +81,5 @@
     <footer>
         <p>2025 СумДУ</p>
     </footer>
-  </body>
+</body>
 </html>
