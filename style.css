@@ -1,4 +1,11 @@
-/* CSS for a simple web page layout */
+:root {
+    --primary: #000;
+    --secondary: #028888;
+    --accent: #e74c3c;
+    --text: #333;
+    --bg-light: #f9f9f9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +13,99 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4;
+    font-family: sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+h1, h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+section {
+    background: var(--bg-light);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.keyword {
+    background: var(--secondary);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.tasks {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.tasks li::before {
+    content: "• ";
+    color: var(--accent);
+    margin-right: 0.3rem;
+}
+
+.contact-link {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; }
+    .keyword { font-size: 0.8rem; }
 }
