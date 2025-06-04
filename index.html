@@ -28,14 +28,14 @@
 </head>
 <body>
     <header>
-      <img src="assets/sumdulogo.png" alt="Логотип СумДУ" width="100" loading="lazy">
+      <img src="assets/sumdulogo.png" alt="Логотип СумДУ" width="100">
       <h1>Кваліфікаційна робота бакалавра</h1>
     </header>
     <main>
         <section>
             <h2>Тема роботи</h2>
             <p>Інформаційна система автоматизованого керування проксі-серверами для комерційного використання</p>
-            <p class="english-title">Information System for Automated Management of Proxy Servers for Commercial Use</p>
+            <p class="english-title" lang="en">Information System for Automated Management of Proxy Servers for Commercial Use</p>
         </section>
         <section>
             <h2>Короткий опис</h2>
@@ -66,17 +66,18 @@
             <p><a href="mailto:dmytro.basanets@student.sumdu.edu.ua" class="contact-link">dmytro.basanets@student.sumdu.edu.ua</a></p>
         </section>
         <section aria-labelledby="visual-materials-heading">
-            <h2>Візуальні матеріали</h2>
+            <h2 id="visual-materials-heading">Візуальні матеріали</h2>
             <figure class="image-container">
-                <picture>
-                  <img src="assets/bot_interface.PNG" 
-                       alt="Інтерфейс клієнтського меню Telegram-бота для керування проксі-серверами" 
-                       loading="lazy"
-                       class="responsive-image">
-                </picture>
-                <figcaption>Інтерфейс клієнтського меню бота</figcaption>
-            </figure>
-        </section>
+            <picture>
+              <source srcset="assets/bot_interface.webp" type="image/webp">
+              <source srcset="assets/bot_interface.avif" type="image/avif">
+              <img src="assets/bot_interface.PNG" 
+                   alt="Інтерфейс клієнтського меню Telegram-бота для керування проксі-серверами" 
+                   class="responsive-image">
+            </picture>
+            <figcaption>Інтерфейс клієнтського меню бота</figcaption>
+          </figure>
+        </section>        
       </main>
     <footer>
         <p>2025 СумДУ</p>
